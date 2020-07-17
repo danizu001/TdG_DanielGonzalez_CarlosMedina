@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: georgia;
+    background: rgb(67, 187, 83);
+}
+
+
+/* Header */
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(7, 119, 35, 0.85);
+    border-bottom: 5px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(17, 173, 51, 0.253);
+    position: fixed;
+    top: 15;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    height: 100px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-header {
+    font-weight: 100;
+    display: inherit;
+    width: 50vw;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.nav .links-header a {
+    font-family: CAMBRIA;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: ease-out .2s;
+}
+
+.nav .links-header a:hover {
+    color: rgb(27, 19, 99);
+}
+
+a.menu2,
+a.menu3,
+a.menu4 {
+    color: rgb(255, 252, 252);
+}
+
+a.menu1 {
+    color: #fff;
+}
+
+.menu {
+    width: 103px;
+    height: 103px;
+    text-align: left;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+.menu>i {
+    font-size: 25px;
+    line-height: 103px;
+}
+
+.nav.caja {
+    width: 90%;
+}
+
+
+/*LOGO*/
+
+.nombre {
+    font-family: CAMBRIA;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.nombre a {
+    color: #443612;
+    font-size: 60px;
+    font-family: Cambria;
+    padding: .1em .7em;
+    font-weight: bold;
+    text-decoration: darkmagenta;
+    letter-spacing: 0.20em;
+    margin: 0;
+    display: block;
+    border: 3px dotted rgb(8, 18, 71);
+    background: rgb(252, 249, 251);
+    text-shadow:0 2px 2px #159720;
+}
+
+
+/*LOGO*/
+
+
+/* Header */
+
+.caja-seccion1 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(/index/fondo_indicon.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.division {
+    width: 2%;
+    height: 4vh;
+    background: #2e2e31;
+}
+
+t1 {
+    font-size: 500px;
+    margin-left: 190px;
+    margin-right: 80px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-family: times;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-shadow: 0 15px 15px rgba(12, 12, 12, 0.952);
+    background: linear-gradient(to right, #fbfdfd, #d3dddf, #edeeed);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 5px;
+}
+
+.introduccion {
+    padding-top: 30px;
+    width: 100%;
+    height: 500%;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 250px
+}
+
+.diapo_imagen img {
+    width: 60%;
+    display: flex;
+    padding-left: 800px;
+}
+
+.diapo-imagen.diapos>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: hsla(214, 38%, 67%, 0.85);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduccion div p {
+    font-family:times;
+    color: darkslategrey;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    text-align: center;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.diapo1 {
+    width: 100%;
+    height: 600px;
+    display: center;
+    position: center;
+    flex-shrink: 20;
+    align-items: center;
+    justify-content: center;
+    background: hsla(0, 0%, 0%, 0.7);
+    border-radius: 50px 50px 50px 50px;
+    
+}
+
+.diapo-parrafo.diapos p {
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.caja-imagen {
+    height: 400%;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.caja-parrafo {
+    height: 100%;
+    width: 55%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.diapo-imagen {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.diapo-parrafo {
+    width: 100%;
+    height: 100%;
+}
+
+.diapos {
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+/*-----------SECCION 2 - DIAGRAMA EN BLOQUES-----------------*/
+
+.diagrama-bloques {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    background: url(/lad.jpg);
+}
+
+.descripcion-bloques {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.caja-diagrama {
+    width: 180%;
+    height: 55%;
+    display: flex;
+    border: 1px solid rgba(10, 10, 10, 0.863);
+    box-shadow: -6px 6px 2px -3px rgba(100, 100, 100, .1);
+    justify-content: flex-start;
+    align-items: center;
+   border-radius: 10%;
+   background: hsla(0, 0%, 100%, 0.726);
+}
+
+.cuadro {
+    width: 95%;
+    height: 70%;
+    margin-left: 4%;
+    border: 1px solid rgba(250, 200, 200, 0.2);
+    box-shadow: -6px 6px 2px -3px rgba(100, 100, 100, .1);
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    background: hsla(214, 35%, 72%, 0.438);
+    border-radius: 10%;
+}
+
+.cuadro::-webkit-scrollbar {
+    display: none;
+}
+
+.diagrama-bloques img {
+    width: 100%;
+}
+
+t2 {
+    font-size: 80px;
+    font-family: cambria;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-left: 5%;
+    text-shadow: 0 5px 5px hsl(214, 43%, 23%, 0.3);
+    background: linear-gradient(to right, #0d4963, #0d6161, #0e7238);
+    -webkit-background-clip: text;
+    color:  #0c1564;
+}
+
+.cuadro p {
+    margin-top: 5%;
+    font-family:times;
+    color: #050505;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+t2 {
+    margin-top: 1%;
+}
+
+t4 {
+    font-size: 10px;
+    font-family: times;
+    font-weight: 100;
+    text-align: left;
+    font-wight: bold;
+    letter-spacing: 0.1em;
+    padding-left: 5vh;
+    background: hsla(0, 0%, 3%, 0.9);
+    -webkit-background-clip: text;
+    color: rgb(255, 255, 255) ;
+}
+
+footer p {
+    font-family: times;
+    color: rgb(2, 2, 2);
+    font-size: 13px;
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer-imagen {
+  width: 20%;
+    height: 20%;
+    display: flex;
+    flex-shrink: 0;
+}
+@media screen and (max-width:1600px) {
+    .nav.caja {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nombre {
+        margin-left: 60px;
+    }
+    .links-header {
+        margin-left: 150px;
+    }
+    .diagrama-bloques {
+        overflow: hidden;
+    }
+    .caja-seccion1 {
+        overflow: hidden;
+    }
+    .division {
+        height: 30px;
+        overflow: hidden;
+    }
+    footer {
+        overflow: hidden;
+    }
+    t1 {
+        font-size: 60px;
+    }
+    .diapo-parrafo.diapos p {
+        font-size: 20px;
+    }
+    t2,
+    t3,
+    t4 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav.caja {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nombre {
+        margin-left: 40px;
+    }
+    .links-header {
+        margin-right: 40px;
+    }
+    .diagrama-bloques {
+        height: 830px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .caja-seccion1 {
+        height: 800px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .division {
+        height: 30px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .diagrama-bloques img {
+        min-width: 900px;
+    }
+    footer {
+        height: 100px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    t1 {
+        font-size: 35px;
+    }
+    .diapo-parrafo.diapos p {
+        font-size: 20px;
+    }
+    t2,
+    t3,
+    t4 {
+        padding-left: 50px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height:830px) {
+    .diagrama-bloques {
+        height: 830px;
+    }
+    .caja-seccion1 {
+        height: 800px;
+    }
+    .division {
+        height: 10px;
+    }
+}

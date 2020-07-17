@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>indicadores</title>
+    <meta http-equiv="refresh" content="33">
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="analisis/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--MENÚ-->
+    <header>
+        <nav>
+            <section class="caja nav">
+                <div class="nombre">
+                    <a href="" target="_blank">
+                        <span style="color:#030473">
+                              INDICON 
+                        </span> <br>
+                    </a>
+                </div>
+                <div class="links-header">
+                 <a href="index.html" 
+                    class="menu1">INICIO</a>
+                     <a href="elementos.html" class="menu2">ELEMENTOS Y SENSORES</a>
+                    <a href="bloques.html" class= "menu3">DIAGRAMA FUNCIONAL</a>
+                    <a href="datos.html" class="menu4">RECEPCIÓN DE DATOS</a>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <div class="container">
+    <div class="row my-3">
+        <div class="col">
+            <h4>DashBoard Indicadores</h4>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="chLine"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="chBar"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col-md-4 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="chDonut1"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="chDonut2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="chDonut3"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-1">
+           <div class="card">
+               <div class="card-body">
+                   <table class="table table-striped">
+   <thead>
+       <tr>
+           <th>Clasificacion por riesgo en cada eje en vivo</th>
+           <th>Medio</th>
+           <th>Alto</th>
+       </tr>
+   </thead>
+   <tbody>
+       <tr>
+           <td>eje x</td>
+           <td><div id="resul_x_medio_buen"></div>
+                <div id="resul_x_medio_reg"></div>
+                <div id="resul_x_medio_mal"></div>
+           </td>
+           <td><div id="resul_x_alto_buen"></div>
+                <div id="resul_x_alto_reg"></div>
+                <div id="resul_x_alto_mal"></div>
+           </td>
+
+       </tr>
+       <tr>
+           <td>eje y</td>
+           <td><div id="resul_y_medio_buen"></div>
+               <div id="resul_y_medio_reg"></div>
+               <div id="resul_y_medio_mal"></div>
+           </td>
+           <td><div id="resul_y_alto_buen"></div>
+                <div id="resul_y_alto_reg"></div>
+                <div id="resul_y_alto_mal"></div>
+           </td>
+       </tr>
+       <tr>
+           <td>eje z</td>
+           <td><div id="resul_z_medio_buen"></div>
+                <div id="resul_z_medio_reg"></div>
+                <div id="resul_z_medio_mal"></div>
+           </td>
+            <td><div id="resul_z_alto_buen"></div>
+                <div id="resul_z_alto_reg"></div>
+                <div id="resul_z_alto_mal"></div>
+            </td>
+       </tr>
+   </tbody>
+</table>
+               </div>
+           </div>
+       </div>
+       <div class="col-md-7 py-1">
+           <div class="card">
+               <div class="card-body">
+                   <canvas id="completo"></canvas>
+               </div>
+           </div>
+       </div>
+
+
+       <div class="col-md-4 py-1">
+          <div class="card">
+              <div class="card-body">
+                  <table class="table table-striped">
+       <thead>
+       <tr>
+          <th>Clasificacion total en cada eje </th>
+          <th>Clasificacion</th>
+
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+          <td>eje x</td>
+          <td><div id="cla_total_x_bue"></div>
+               <div id="cla_total_x_re"></div>
+               <div id="cla_total_x_ma"></div>
+          </td>
+
+       </tr>
+       <tr>
+          <td>eje y</td>
+          <td><div id="cla_total_y_bue"></div>
+              <div id="cla_total_y_re"></div>
+              <div id="cla_total_y_ma"></div>
+          </td>
+       </tr>
+       <tr>
+          <td>eje z</td>
+          <td><div id="cla_total_z_bue"></div>
+               <div id="cla_total_z_re"></div>
+               <div id="cla_total_z_ma"></div>
+          </td>
+       </tr>
+       </tbody>
+       </table>
+              </div>
+          </div>
+       </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+bbody {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   background-color: rgba(255,255, 0.85);
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: georgia;
+    background: rgb(0,0,0);
+    width: 100%;
+    height:10px;
+}
+/* MENÚ */
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(7, 119, 35, 0.85);
+    border-bottom: 5px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(17, 173, 51, 0.253);
+    position: fixed;
+    top: 15;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    height: 100px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-header {
+    font-weight: 100;
+    display: inherit;
+    width: 50vw;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.nav .links-header a {
+    font-family: CAMBRIA;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 0px;
+    transition: ease-out .2s;
+}
+
+.nav .links-header a:hover {
+    color: rgb(27, 19, 99);
+}
+
+a.menu2,
+a.menu3,
+a.menu4 {
+    color: rgb(255, 252, 252);
+}
+
+a.menu1 {
+    color: #fff;
+}
+
+.menu {
+    width: 103px;
+    height: 103px;
+    text-align: left;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+.menu>i {
+    font-size: 25px;
+    line-height: 103px;
+}
+
+.nav.caja {
+    width: 90%;
+}
+
+
+/*NOMBRE*/
+
+.nombre {
+    font-family: CAMBRIA;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.nombre a {
+    color: #443612;
+    font-size: 60px;
+    font-family: Cambria;
+    padding: .1em .7em;
+    font-weight: bold;
+    text-decoration: darkmagenta;
+    letter-spacing: 0.20em;
+    margin: 0;
+    display: block;
+    border: 3px dotted rgb(8, 18, 71);
+    background: rgb(252, 249, 251);
+    text-shadow:0 2px 2px #159720;
+}
+
+
+
+
+.container{
+
+    padding-top: 150px;
+
+}
+h4{
+  font-family: CAMBRIA;
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+
+d{
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 20px;
+}
+.link{
+    text-decoration: none;
+      color: #116315;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1600px) {
+    .nav.caja {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nombre {
+        margin-left: 60px;
+    }
+    .links-header {
+        margin-right: 120px;
+    }
+    .diagrama-bloques {
+        overflow: hidden;
+    }
+    .caja-seccion1 {
+        overflow: hidden;
+    }
+    .division {
+        height: 30px;
+        overflow: hidden;
+    }
+    footer {
+        overflow: hidden;
+    }
+    t1 {
+        font-size: 50px;
+    }
+    .diapo-parrafo.diapos p {
+        font-size: 20px;
+    }
+    t2,
+    t3,
+    t4 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav.caja {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nombre {
+        margin-left: 60px;
+    }
+    .links-header {
+        margin-right: 120px;
+    }
+    .diagrama-bloques {
+        height: 830px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .caja-seccion1 {
+        height: 800px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .division {
+        height: 30px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    .diagrama-bloques img {
+        min-width: 700px;
+    }
+    footer {
+        height: 100px;
+        width: 1200px;
+        overflow: hidden;
+    }
+    t1 {
+        font-size: 40px;
+    }
+    .diapo-parrafo.diapos p {
+        font-size: 20px;
+    }
+    t2,
+    t3,
+    t4 {
+        padding-left: 50px;
+        font-size: 40px;
+    }
+    .links-header {
+        margin-right: 100px;
+}
+}
+
+@media screen and (max-height:830px) {
+    .diagrama-bloques {
+        height: 830px;
+    }
+    .caja-seccion1 {
+        height: 800px;
+    }
+    .division {
+        height: 30px;
+    }
+      .nav.caja {
+        width: 100%;
+        justify-content: space-between;
+    }
+     .links-header {
+        margin-right: 100px;}
+}
+@media screen and (max-height:530px) {
+.links-header {
+        margin-right: 100px;}
+
+
+

@@ -1,0 +1,118 @@
+  <!--INDICON IOT FUNDAMENTOS Y APLICACIONES 
+   María Fernanda Hernández B.
+   Carlos José Medina Giner.
+   Daniel Esteban Zuluaga.
+   SENSORES -->
+   
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="bus.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDICON</title>
+    <link rel="stylesheet" href="estilos.css">
+   
+</head>
+
+<body>
+    <!--MENÚ-->
+    <header>
+        <nav>
+            <section class="caja nav">
+                <div class="nombre">
+                    <a href="" target="_blank">
+                        <span style="color:#030473">
+                              INDICON 
+                        </span>
+                    </a>
+                </div>
+                <div class="links-header">
+                   <a href="index.html" 
+                    class="menu1">INICIO</a>
+                     <a href="elementos.html" class="menu2">ELEMENTOS Y SENSORES</a>
+                    <a href="bloques.html" class= "menu3">DIAGRAMA FUNCIONAL</a>
+                    <a href="" class="menu4">RECEPCIÓN DE DATOS</a>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header> 
+
+   
+    <!--SUPERIOR-->
+    <div class="caja-seccion1">
+        <section class="introduccion">
+            <div class="caja-parrafo">
+                <section class="diapo-parrafo diapos">
+                    <div class="diapo1">
+                        <t2 class="glicthed">RASPBERRY PI 3</t2>
+                        <br>
+                        <p>La Raspberry Pi es básicamente una computadora de bajo costo que proporciona un conjunto de pines GPIO que le permiten incorporar y controlar componentes electrónicos para ser usada en proyectos digitales, entre los cuales destacan las aplicaciones de IoT, para este proyecto, la raspberry se encargará de recibir los datos del acelerómetro y procesarlos que luego ser enviados por medio del módulo GPRS. </p>
+                    
+                    <div class= "rsp-imagen">
+                <img src="rsp.png"> 
+                </div>
+                </div>
+                </section>
+            </div>
+            <div class="caja-imagen">
+                <section class="diapo-parrafo diapos">
+                    <div class="diapo2">
+                      <t2 class="glicthed">MÓDULO GPRS</t2>
+                      <br>
+                      <br>
+                      <p> Con el fin de tener conexión a internet constante en el sistema, se determinó el uso del Módulo GPRS SIM800 que permite, tras introducirle una tarjeta sim, enviar y recibir llamadas y SMS y conectarse a Internet. </p>
+                      <br>
+                      <br>
+                      <br>
+                        <div class= "sim-imagen">
+                <img src="SIM900.PNG"> 
+                </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+  <div class="chevron" id: "chev1"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <a href="#titulo2" class= "text">CLICK</a>
+  <section>
+    </div>
+    <div class="division"></div>
+
+
+       <!--INFERIOR-->
+    <section class="diagrama-bloques">
+        <section class="descripcion-bloques">
+            <div class="cuadro">
+                <div id= "titulo2">
+                   <br> <t4>_____</t4><t1>  ACELERÓMETRO</t1>  
+                <p>Es un dispositivo que mide la aceleración y la fuerza inducida por la gravedad, ya sea de movimientos o vibraciones. El acelerómetro específico que se utilizraá corresponde al MPU6050, que además de acelerómetro es un giroscopio capaz de determinar ángulos de giro, para esta aplicación, sin embargo, solo se utilizará en modo de acelerómetro, analizando aceleraciones en los tres ejes coordenados. 
+                </p>
+                <div class= "ace-imagen">
+                <img src="ace.PNG"> 
+                </div>
+            </div>
+
+        </section>
+        <div class="cuadro2">
+          <t1 class="glicthed">APLICACIÓN WEB</t1>
+          <br>
+                      <p> Directamente en esta página web se presentan los datos por medio de codificación en JavaScript, esta se conecta directamente a la base de datos que contiene los indicadores de conducción a partir de los cuáles se generarán gráficas con datos específicos acerca de los modos de conducción cada minuto.
+                      </p>
+                      <br>
+                      
+                      <div class= "app-imagen">
+                <img src="inv.png"> 
+                </div>
+        </div>
+    
+    <script src="index/js/main.js"></script>
+</body>
+
+</html>
