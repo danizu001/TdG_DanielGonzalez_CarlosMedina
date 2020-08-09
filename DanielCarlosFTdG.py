@@ -230,8 +230,8 @@ while True:
                     cxa=0
                     cya=0
                     cza=0
-                limitez = 0.98+(0.98*0.05)
-                limitez1 = 0.98-(0.98*0.05)
+                limitez = 0.98+(0.98*0.075)
+                limitez1 = 0.98-(0.98*0.075)
                 limitez3 = 0.98+(0.98*0.15)
                 limitez4 = 0.98-(0.98*0.15)
                 if(limitez3>zma1[i]>=limitez or limitez4<zma1[i]<=limitez1):
@@ -320,10 +320,6 @@ while True:
         data_to_uploadz = {
         "ejez" : zma1
         }
-        arret = {
-        "Arreglo_tiempo" : tma1
-            }
-        arretiem = FBcon.put('/MyTestData/','html',arret)
         tottime = FBcon.put('/MyTestData/','tiempo',total_time)
         resultx = FBcon.put('/MyTestData/','Registrodatosx',data_to_uploadx)
         resulty = FBcon.put('/MyTestData/','Registrodatosy' ,data_to_uploady)
